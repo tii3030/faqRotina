@@ -1,0 +1,47 @@
+.App {
+    font-family: 'Urbanist', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+hr {
+    border-top: 1px;
+}
+
+.Spacing {
+    &.s10 {height: 10px}
+    &.s20 {height: 20px}
+    &.s30 {height: 30px}
+}
+
+.D-Flex {
+    display: flex;
+}
+
+.D-In-Flex{
+    display: inline-flex;
+}
+
+.Flex-Direction-Col {
+    flex-direction: column;
+}
+
+.Col-3 {
+    width: 30%;
+}
