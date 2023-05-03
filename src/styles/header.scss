@@ -29,4 +29,18 @@
     font-weight: 700;
     color: #FFFFFF;
     cursor: pointer;
+    text-decoration: none;
+}
+
+@media (max-width: 630px)
+{
+    .Logo-Header {
+        height: 38px;
+    }
+    .Button-Header {
+        width: 165px;
+        height: 38px;
+        border-radius: 14px;
+        font-size: 15px;
+    }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../layout/Header/Header';
-import Breadcrumbs from '../layout/Breadcrumbs/Breadcrumbs';
+import Breadcrumbs from '../components/Breadcrumbs/Breadcrumbs';
 import Footer from '../layout/Footer/Footer';
 
 type WrapperType = {

@@ -1,9 +1,7 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import Logo from '../../assets/img/logo.png';
 
 const Header: React.FC = () => {
-  const navigate = useNavigate();
   return (
     <div className="Header-Container">
       <div>
@@ -12,16 +10,12 @@ const Header: React.FC = () => {
         </a>
       </div>
       <div>
-        <div
+        <a
           className="Button-Header"
-          onClick={() =>
-            navigate('/Central_de_Ajuda/Area_do_Cliente', { state: 'faq01r1' })
-          }
-          onKeyDown={() => null}
-          aria-hidden="true"
+          href="https://www.portalunsoft.com.br/area-do-cliente/rotina"
         >
           ÁREA DO CLIENTE
-        </div>
+        </a>
       </div>
     </div>
   );

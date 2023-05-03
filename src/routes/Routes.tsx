@@ -6,48 +6,76 @@ import {
   Navigate,
 } from 'react-router-dom';
 import uuid from 'react-uuid';
+import Error from '../components/404/404';
 import Wrapper from '../wrapper/wrapper';
-import HelpCenter from '../pages/HelpCenter/HelpCenter';
-import Faq02 from '../pages/Faq02/Faq02';
-import Faq03 from '../pages/Faq03/Faq03';
+import Home from '../pages/Home/Home';
+import Topics from '../pages/Topics/Topics';
+import Faq03 from '../pages/Content/Content';
 import { routes } from '../mocks/links';
 
 const Routes: React.FC = () => (
   <Router>
     <Routers>
-      <Route path="/" element={<Navigate to="/Central_de_Ajuda" />} />
+      <Route path="/" element={<Navigate to="/home" />} />
       <Route
-        path="/Central_de_Ajuda"
+        path="/home"
         element={
           <Wrapper>
-            <HelpCenter />
+            <Home />
           </Wrapper>
         }
       />
-      {routes.map((path) => (
+      {routes.topic.map((item: string) => (
         <Route
-          path={path}
+          key={uuid()}
+          path={item}
           element={
             <Wrapper>
-              <Faq02 />
+              <Topics />
             </Wrapper>
           }
-          key={uuid()}
         />
       ))}
-      <Route
-        path="/Central-de-Ajuda/faq02"
+      {/* <Route
+        path="/home/topics/:idTopic"
         element={
           <Wrapper>
-            <Faq02 />
+            <Topics />
           </Wrapper>
         }
-      />
-      <Route
-        path="/faq03"
+      /> */}
+      {routes.content.map((item: string) => (
+        <Route
+          key={uuid()}
+          path={item}
+          element={
+            <Wrapper>
+              <Faq03 />
+            </Wrapper>
+          }
+        />
+      ))}
+      {/* <Route
+        path="/home/topics/:idTopic/content/:idContent"
         element={
           <Wrapper>
             <Faq03 />
+          </Wrapper>
+        }
+      /> */}
+      <Route
+        path="/error"
+        element={
+          <Wrapper>
+            <Error />
+          </Wrapper>
+        }
+      />
+      <Route
+        path="*"
+        element={
+          <Wrapper>
+            <Error />
           </Wrapper>
         }
       />

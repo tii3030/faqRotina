@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <div className="Cols">
             <h5>INSTITUCIONAL</h5>
             <a href="https://www.rotina.com.br/sobre">Quem somos ?</a>
-            <a href="https://www.rotina.com.br/sobre">Central de ajuda</a>
+            <a href="https://centraldeajudarotina.com.br/">Central de ajuda</a>
           </div>
           <div>
             <h5>IMÓVEIS</h5>
@@ -68,11 +68,6 @@ const Footer: React.FC = () => {
       <div>
         <a href="https://www.rotina.com.br/">
           <img src={Logo} alt="Rotina Imobiliária" className="Logo" />
-        </a>
-      </div>
-      <div className="Credits">
-        <a href="https://github.com/tii3030/" target="_blank" rel="noreferrer">
-          Created By github.com/tii3030/
         </a>
       </div>
     </div>

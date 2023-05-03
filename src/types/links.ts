@@ -1,18 +1,23 @@
 export type Link = {
-    number: number,
-    title: string,
-    route: string,
-    namePath: string,
-}
+  number: number;
+  title: string;
+  id: string;
+};
 
 export type LinkContent = {
-    route: string,
-    title: string,
-    subTitle: string,
-    links: Content[],
+  id: string;
+  title: string;
+  subTitle: string;
+  links: Content[];
 };
 
 export type Content = {
-    title: string,
-    route: string,
+  titleLink: string;
+  route: string;
+};
+
+export type DataContent = {
+  id: string;
+  title: string;
+  content: string;
 };

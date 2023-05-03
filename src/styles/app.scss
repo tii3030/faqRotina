@@ -1,5 +1,6 @@
 .App {
     font-family: 'Urbanist', sans-serif;
+    overflow: hidden;
 }
 
 * {
@@ -21,7 +22,9 @@ code {
 }
 
 hr {
-    border-top: 1px;
+    height: 0;
+    border: 0;
+    border-top: 1px solid #b3b3b3;
 }
 
 .Spacing {
@@ -44,4 +47,32 @@ hr {
 
 .Col-3 {
     width: 30%;
+}
+
+.Error-404 {
+    height: 400px;
+    display: flex;
+    margin: 100px auto;
+}
+
+.Loader {
+    border: 6px solid #f3f3f3;
+    border-top-color: rgb(243, 243, 243);
+    border-top-style: solid;
+    border-top-width: 6px;
+    border-top: 6px solid #bd0101;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.mr-8 {
+    margin-right: 8px;
 }

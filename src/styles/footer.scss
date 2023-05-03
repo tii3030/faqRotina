@@ -57,16 +57,21 @@
     margin-right: 10px;
 }
 
-.Credits a {
-    font-size: 16px;
+.Credits span, .Credits a {
     bottom: 0;
-    position: absolute;
-    margin-left: auto;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: #ff8f8f;
+    font-size: 16px;
+    left: 50%;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: -20px;
+    text-align: center;
+    margin-right: auto;
 }
 
+.Credits a {
+    text-decoration: underline;
+}
 
 @media (max-width: 1180px)
 {

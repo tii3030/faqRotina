@@ -13,6 +13,12 @@
     color: #FFFFFF;
 }
 
+.Breadcrumbs div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .Breadcrumbs a {
     text-decoration: none;
 }

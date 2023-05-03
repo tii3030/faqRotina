@@ -34,6 +34,8 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 0,
     'import/prefer-default-export': 0,
     'import/no-cycle': 0,
-    'no-plusplus': ["error", { allowForLoopAfterthoughts: true }]
+    'no-plusplus': ["error", { allowForLoopAfterthoughts: true }],
+    "global-require": 0,
+    "no-dynamic-require": 0,
   },
 };
